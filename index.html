@@ -1,0 +1,110 @@
+<!-- *** Lo primero que debes hacer es FORKEAR este documento *** -->
+<!-- *** si tenéis dos veces abierto el mismo proyecto no se refrescará y dará problemas *** -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>HTML MOLA</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="warning red">
+          <span
+            >Si tienes dos veces abierto el mismo proyecto no se refrescará y
+            dará problemas. Trabaja siempre desde un solo espacio 💻</span
+          >
+        </div>
+
+        <div class="warning yellow">
+          <span
+            >Lo primero que debes hacer es <strong><i>FORK</i></strong> de este
+            documento.</span
+          >
+          <span>💾 Recuerda guardar tus cambios para no perderlos.</span>
+        </div>
+        <h2>Examen Ramp Up</h2>
+        <h3><i>Objetivo:</i></h3>
+        <p>
+          ¡Enhorabuena por llegar hasta aquí! Ahora queda una prueba más para
+          pasar el Ramp Up. Demuestra todo lo que has aprendido resolviendo
+          estos ejercicios:
+        </p>
+      </header>
+      <h2>HTML Y CSS</h2>
+      <hr />
+      <p>
+        1. Diseña un formulario de contacto en HTML con campos para: 
+      <ul>
+        <li>Nombre</li>
+        <li>Email</li>
+        <li>Asunto del mensaje</li>
+        <li>Mensaje</li>
+        <li>Botón para enviar</li>
+        <li>Botón para borrar todo</li>
+      </ul> 
+      <p>Los botones aumentarán de tamaño al pasar el ratón sobre ellos y tendrán que cambiar de color.</p>
+      <p>El campo email tiene que ser obligatorio. Cuando pulsemos el botón enviar si está vacio debe salir algo que diga que tiene que rellenarlo (piensa en algún atributo)</p>
+      <p>Debes darle estilos al formulario usando flex, usar transiciones y transformaciones.</p>
+      </p>
+      <br />
+      <h2>Javascript</h2>
+      <p>
+        1. Escribe un programa que muestre los números del 1 al 100 en la
+        consola.
+      </p>
+      <ul>
+        <li>
+          Para los múltiplos de 3, en lugar de mostrar el número, muestra la
+          palabra "Fizz".
+        </li>
+        <li>Para los múltiplos de 5, muestra la palabra "Buzz".</li>
+        <li>
+          Para los números que son múltiplos de ambos 3 y 5, muestra "FizzBuzz".
+        </li>
+        <li>
+          Para los números que no cumplen ninguna de las condiciones anteriores,
+          muestra el número tal como es.
+        </li>
+      </ul>
+      <p>
+        2. Escribe un programa que solicite al usuario una cantidad en metros y luego le permita convertirla a pies o pulgadas mediante
+        <strong>'prompt()'</strong>. Se debe mostrar el resultado de la conversión en la consola.
+        <mark>1 metro equivale a 3.281 pies y a 39.37 pulgadas.</mark>
+        <p style="color: red">Recuerda pasar el <strong>"prompt"</strong> a tipo número para hacer cálculos</p>
+      </p>
+      <hr />
+      <!-- tu código aquí -->
+      <form>
+        <ul>
+          <li>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"/>
+          </li>
+          <li>
+            <label for="correo">Email</label>
+            <input type="email" id="correo" name="correo" required/>
+          </li>
+          <li>
+            <label for="asunto">Asunto del mensaje</label>
+            <input type="text" id="asunto" name="asunto"/>
+          </li>
+          <li>
+            <label for="msg">Mensaje</label>
+            <input type="text" id="msg" name="msg"/>
+          </li>
+          <li>
+            <button class="botones" type="submit">Enviar</button>
+          </li>
+          <li>
+            <button class="botones" type="reset">Borrar todo</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
